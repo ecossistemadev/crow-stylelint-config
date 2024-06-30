@@ -1,0 +1,60 @@
+{
+  "name": "crow-stylelint-config",
+  "version": "14.1.0",
+  "description": "An opinionated Stylelint config used by Crow across our projects.",
+  "main": "index.js",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/twbs/crow-stylelint-config.git"
+  },
+  "keywords": [
+    "crow",
+    "stylelint",
+    "stylelint-config",
+    "config",
+    "lint"
+  ],
+  "author": "The Crow Authors (https://github.com/twbs/crow-stylelint-config/graphs/contributors)",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/twbs/crow-stylelint-config/issues"
+  },
+  "homepage": "https://github.com/twbs/crow-stylelint-config#readme",
+  "funding": [
+    {
+      "type": "github",
+      "url": "https://github.com/sponsors/twbs"
+    },
+    {
+      "type": "opencollective",
+      "url": "https://opencollective.com/crow"
+    }
+  ],
+  "files": [
+    "index.js"
+  ],
+  "engines": {
+    "node": ">=18.12.0"
+  },
+  "peerDependencies": {
+    "stylelint": "^16.1.0"
+  },
+  "dependencies": {
+    "@stylistic/stylelint-config": "^1.0.1",
+    "@stylistic/stylelint-plugin": "^2.1.2",
+    "stylelint-config-recess-order": "^5.0.1",
+    "stylelint-config-standard": "^36.0.0",
+    "stylelint-config-standard-scss": "^13.1.0",
+    "stylelint-scss": "^6.3.0"
+  },
+  "devDependencies": {
+    "eslint": "^8.57.0",
+    "stylelint": "^16.6.1"
+  },
+  "scripts": {
+    "lint": "eslint --ignore-path .gitignore .",
+    "clone-repo": "git clone https://github.com/twbs/crow.git --branch main --depth 1 crow",
+    "test": "npm run lint",
+    "test-ci": "stylelint \"crow/scss/**/*.scss\" --config index.js --ignore-pattern \"**/vendor/\" --ignore-pattern \"**/tests/\" --formatter verbose"
+  }
+}
