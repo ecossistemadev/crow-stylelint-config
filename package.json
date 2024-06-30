@@ -5,7 +5,7 @@
   "main": "index.js",
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/twbs/crow-stylelint-config.git"
+    "url": "git+https://github.com/ecossistemadev/crow-stylelint-config.git"
   },
   "keywords": [
     "crow",
@@ -14,16 +14,16 @@
     "config",
     "lint"
   ],
-  "author": "The Crow Authors (https://github.com/twbs/crow-stylelint-config/graphs/contributors)",
+  "author": "The Crow Authors (https://github.com/ecossistemadev/crow-stylelint-config/graphs/contributors)",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/twbs/crow-stylelint-config/issues"
+    "url": "https://github.com/ecossistemadev/crow-stylelint-config/issues"
   },
-  "homepage": "https://github.com/twbs/crow-stylelint-config#readme",
+  "homepage": "https://github.com/ecossistemadev/crow-stylelint-config#readme",
   "funding": [
     {
       "type": "github",
-      "url": "https://github.com/sponsors/twbs"
+      "url": "https://github.com/sponsors/ecossistemadev"
     },
     {
       "type": "opencollective",
@@ -53,7 +53,7 @@
   },
   "scripts": {
     "lint": "eslint --ignore-path .gitignore .",
-    "clone-repo": "git clone https://github.com/twbs/crow.git --branch main --depth 1 crow",
+    "clone-repo": "git clone https://github.com/ecossistemadev/crow.git --branch main --depth 1 crow",
     "test": "npm run lint",
     "test-ci": "stylelint \"crow/scss/**/*.scss\" --config index.js --ignore-pattern \"**/vendor/\" --ignore-pattern \"**/tests/\" --formatter verbose"
   }
